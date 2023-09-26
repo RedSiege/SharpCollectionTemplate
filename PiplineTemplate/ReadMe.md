@@ -70,7 +70,8 @@ Select "Save & queue" from the top menu to save the pipeline and queue a build.
 # Adding artifacts to Organization
 Artifacts can be manually added to an Azure DevOps organization for use in pipelines. To upload artifacts to your organization, create a folder and place the items to upload in the folder. Then, using the Azure CLI, `cd` to the folder you created and use the command shown below. In this example, the Organization and feed names have been set to "ExampleFactory." The artifact name has been set to "example-executble." **Note:** Artifact names must be lowercase alphanumeric strings separated by a period, a dash, or a \\.
 
-```az artifacts universal publish \
+```
+az artifacts universal publish \
  --organization https://dev.azure.com/ExampleFactory/ \
  --feed ExampleFactory \
  --name example-executable \
